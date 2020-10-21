@@ -2,6 +2,23 @@
 
 ## Summary
 
+APH
+1) npm i @types/enzyme @types/jest enzyme enzyme-adapter-react-16 identity-obj-proxy jest jest-junit react-test-renderer sinon @types/sinon ts-jest --save-dev
+2) Cambiar el package.json
+3) npm test
+
+3.1.) Para el analisis de covertura: npm test -- --coverage
+  En \proyecto\coverage\lcov-report\index.html crea un html con el reporte de covertura
+3.2.) Para hacer un test a un solo fichero: npm test -- Number.test.ts
+
+
+3.3.) Enzyme monta los componentes en memoria para poderlos testear con jest.
+
+
+
+
+
+
 Short summary on functionality and used technologies.
 
 [picture of the solution in action, if possible]
