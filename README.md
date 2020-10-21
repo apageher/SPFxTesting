@@ -10,8 +10,6 @@ APH
 3.1.) Para el analisis de covertura: npm test -- --coverage
   En \proyecto\coverage\lcov-report\index.html crea un html con el reporte de covertura
 3.2.) Para hacer un test a un solo fichero: npm test -- Number.test.ts
-
-
 3.3.) Enzyme monta los componentes en memoria para poderlos testear con jest.
 
 

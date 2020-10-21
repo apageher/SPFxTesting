@@ -8,32 +8,28 @@ configure({ adapter: new Adapter() });
 
 describe('Probando mi componente <List>', () => {
 
-    test('Validar nodos', () => {
 
-        const fruits: IData[] = [
-            {
-                name: 'fresa',
-                id: 1
-            },
-            {
-                name: 'naranja',
-                id: 2
-            },
-            {
-                name: 'manzana',
-                id: 3
-            }
-        ]
-        const wrapper = shallow(React.createElement(
+    const fruits: IData[] = [
+        { name: 'fresa', id: 1 },
+        { name: 'naranja', id: 2 },
+        { name: 'manzana', id: 3 }
+    ]
+    let wrapper;
+
+    //BeforeEach(): Cada vez que se vaya a ejecutar un test se ejecuta esta función
+    beforeEach(() => {
+        //Creamos una instancia nueva del componente cada vez que se ejecuta un test()
+        wrapper = shallow(React.createElement(
             List,
             {
                 titulo: 'Mis frutas',
                 list: fruits
             }
         ));
-
         //Tambien podría ser Mount (este es en profundidad, todo el arbol de componentes)
+    })
 
+    test('Validar nodos', () => {
         //Validar si existe un nodo
         expect(wrapper.find('h1').exists()).toBe(true);
 
@@ -49,33 +45,10 @@ describe('Probando mi componente <List>', () => {
 
 
     test('Validar actualización de props', () => {
-
-        const fruits: IData[] = [
-            {
-                name: 'fresa',
-                id: 1
-            },
-            {
-                name: 'naranja',
-                id: 2
-            },
-            {
-                name: 'manzana',
-                id: 3
-            }
-        ]
-        const wrapper = shallow(React.createElement(
-            List,
-            {
-                titulo: 'Mis frutas',
-                list: fruits
-            }
-        ));
-
-        expect(wrapper.find('li').length).toBe(3);      
+        expect(wrapper.find('li').length).toBe(3);
         //Actualizar las props
         wrapper.setProps({
-            list: [{name: 'kiwi', id: 5}]
+            list: [{ name: 'kiwi', id: 5 }]
         })
         expect(wrapper.find('li').length).toBe(1);
 
@@ -83,7 +56,6 @@ describe('Probando mi componente <List>', () => {
             titulo: 'Super Frutas'
         })
         expect(wrapper.find('.big').text()).toBe('Super Frutas');
-
     })
 
 })
