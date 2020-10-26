@@ -7,8 +7,8 @@
 Para hacer uso de Jest y Enzyme habrá que instalar los siguientes paquetes como dependencias de desarrollo:
 > npm i @types/enzyme @types/jest enzyme enzyme-adapter-react-16 identity-obj-proxy jest jest-junit react-test-renderer sinon @types/sinon ts-jest --save-dev
 
-Modificar el package.json para incluir el script de jest
-> Como es indica en (https://www.eliostruyf.com/sharepoint-framework-unit-tests-with-jest/)
+Modificar el package.json para incluir el script de Jest:
+> Como se indica en (https://www.eliostruyf.com/sharepoint-framework-unit-tests-with-jest/)
 
 Ejecutar el script de test:
 > npm test
@@ -21,11 +21,11 @@ Ejecutar el script de test:
 
 
 Más información de Jest y Enzyme:
-> (https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-jest-testing)
-> (https://www.eliostruyf.com/writing-unit-test-for-your-sharepoint-framework-components)
-> (https://www.c-sharpcorner.com/article/spfx-unit-test-with-jest-and-enzyme)
-> (https://kirtiprajapati.com/2019/08/08/unit-test-for-spfx-with-jest)
-> (https://jestjs.io/docs/en/api)
+> - (https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-jest-testing)
+> - (https://www.eliostruyf.com/writing-unit-test-for-your-sharepoint-framework-components)
+> - (https://www.c-sharpcorner.com/article/spfx-unit-test-with-jest-and-enzyme)
+> - (https://kirtiprajapati.com/2019/08/08/unit-test-for-spfx-with-jest)
+> - (https://jestjs.io/docs/en/api)
 
 ## Used SharePoint Framework Version
 
