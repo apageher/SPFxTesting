@@ -1,25 +1,31 @@
-# sp-fx-testing
+# SPFx-Testing
 
 ## Summary
 
-APH
-1) npm i @types/enzyme @types/jest enzyme enzyme-adapter-react-16 identity-obj-proxy jest jest-junit react-test-renderer sinon @types/sinon ts-jest --save-dev
-2) Cambiar el package.json
-3) npm test
+**Solución de SPFx para probar los test unitarios con Jest y Enzyme**
 
-3.1.) Para el analisis de covertura: npm test -- --coverage
-  En \proyecto\coverage\lcov-report\index.html crea un html con el reporte de covertura
-3.2.) Para hacer un test a un solo fichero: npm test -- Number.test.ts
-3.3.) Enzyme monta los componentes en memoria para poderlos testear con jest.
+Para hacer uso de Jest y Enzyme habrá que instalar los siguientes paquetes como dependencias de desarrollo:
+> npm i @types/enzyme @types/jest enzyme enzyme-adapter-react-16 identity-obj-proxy jest jest-junit react-test-renderer sinon @types/sinon ts-jest --save-dev
+
+Modificar el package.json para incluir el script de jest
+> Como es indica en (https://www.eliostruyf.com/sharepoint-framework-unit-tests-with-jest/)
+
+Ejecutar el script de test:
+> npm test
+
+- Para el analisis de covertura: _npm test -- --coverage_
+> En \proyecto\coverage\lcov-report\index.html crea un html con el reporte de covertura
+
+- Para hacer un test a un solo fichero: _npm test -- Number.test.ts_
+- Enzyme monta los componentes en memoria para poderlos testear con jest.
 
 
-
-
-
-
-Short summary on functionality and used technologies.
-
-[picture of the solution in action, if possible]
+Más información de Jest y Enzyme:
+> (https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-jest-testing)
+> (https://www.eliostruyf.com/writing-unit-test-for-your-sharepoint-framework-components)
+> (https://www.c-sharpcorner.com/article/spfx-unit-test-with-jest-and-enzyme)
+> (https://kirtiprajapati.com/2019/08/08/unit-test-for-spfx-with-jest)
+> (https://jestjs.io/docs/en/api)
 
 ## Used SharePoint Framework Version
 
@@ -32,15 +38,12 @@ Short summary on functionality and used technologies.
 
 > Get your own free development tenant by subscribing to [Microsoft 365 developer program](http://aka.ms/o365devprogram)
 
-## Prerequisites
-
-> Any special pre-requisites?
 
 ## Solution
 
 Solution|Author(s)
 --------|---------
-folder name | Author details (name, company, twitter alias with link)
+SPFx Global | Alvaro Peich
 
 ## Version history
 
@@ -62,27 +65,3 @@ Version|Date|Comments
 - in the command-line run:
   - **npm install**
   - **gulp serve**
-
-> Include any additional steps as needed.
-
-## Features
-
-Description of the extension that expands upon high-level summary above.
-
-This extension illustrates the following concepts:
-
-- topic 1
-- topic 2
-- topic 3
-
-> Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions advance.
-
-> Share your web part with others through Microsoft 365 Patterns and Practices program to get visibility and exposure. More details on the community, open-source projects and other activities from http://aka.ms/m365pnp.
-
-## References
-
-- [Getting started with SharePoint Framework](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
-- [Building for Microsoft teams](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/build-for-teams-overview)
-- [Use Microsoft Graph in your solution](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/using-microsoft-graph-apis)
-- [Publish SharePoint Framework applications to the Marketplace](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/publish-to-marketplace-overview)
-- [Microsoft 365 Patterns and Practices](https://aka.ms/m365pnp) - Guidance, tooling, samples and open-source controls for your Microsoft 365 development
